@@ -17,15 +17,15 @@ if moneda not in monedas_disp:
     print("La moneda elegida no es valida")
 
 # Si elige EUR
-elif moneda in monedas_disp:
+elif moneda == "eur":
     monto = float(input("ingrese monto: "))
     result = monto / peso_a_euro
-    print(f"El monto de convertir EUR a PESOS es de ${result:.2f} pesos")
+    print(f"Con ${monto} pesos recibira €{result:.2f} EUR")
 # Si elige USD
-elif moneda in monedas_disp:
+elif moneda == "usd":
     monto = float(input("ingrese monto: "))
     result = monto / peso_a_usd
-    print(f"El monto de convertir USD a PESOS es de ${result:.2f} pesos")
+    print(f"Con ${monto} pesos recibira ${result:.2f} USD")
 
  
 
